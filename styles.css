@@ -17,9 +17,9 @@
   --bg-darker: #0a0a0a;
   --bg-card: #1a1a1a;
   --bg-card-hover: #222222;
-  --color-accent: #136df5;
-  --color-accent-light: #3385ff;
-  --color-accent-glow: rgba(56, 64, 76, 0.3);
+  --color-accent: #f4b639;
+  --color-accent-light: #f68523;
+  --color-accent-glow: rgba(164, 128, 85, 0.3);
   --text-primary: #ffffff;
   --text-secondary: #a0a0a0;
   --text-muted: #666666;
@@ -100,10 +100,10 @@ body {
 }
 
 .cursor {
-  display: inline-block;
+  display: inline;
   color: var(--color-accent);
   animation: blink 0.8s infinite;
-  margin-left: 2px;
+  margin-left: 1px;
 }
 
 @keyframes blink {
@@ -424,7 +424,7 @@ body {
 
 .hero-location {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
   gap: 0.3rem;
   font-size: 1rem;
@@ -436,6 +436,13 @@ body {
   height: 18px;
   stroke: var(--color-accent);
   flex-shrink: 0;
+}
+  
+.hero-location p {
+  margin: 0;
+  font-size: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.4;
 }
 
 /* Hero Counters */
@@ -1241,6 +1248,7 @@ body {
   color: var(--text-muted);
   margin-top: 1rem;
   opacity: 0.8;
+  text-align: left;
 }
 
 .form-note svg {
@@ -1275,12 +1283,12 @@ body {
    ============================================ */
 @media (max-width: 768px) {
   .splash-name {
-    font-size: 2.3rem;
+    font-size: 1.5rem;
     min-height: 3rem;
   }
 
   .splash-title {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     letter-spacing: 0.2em;
   }
 
@@ -1406,18 +1414,19 @@ body {
 
 @media (max-width: 480px) {
   .hero-name {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
   }
 
   .hero-title {
-    font-size: 0.95rem;
+    font-size: 0.90rem;
   }
 
   .hero-counters {
     flex-direction: column;
     align-items: center;
   }
-
+  .hero-location{
+  }
   .counter-item {
     width: 80%;
     flex-direction: row;

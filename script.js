@@ -53,7 +53,7 @@ function createGeoLines() {
 // ============================================
 function typeWriter() {
   if (typedIndex <= fullName.length) {
-    typedNameEl.textContent = fullName.slice(0, typedIndex);
+    typedNameEl.innerHTML = fullName.slice(0, typedIndex) + '<span class="cursor">|</span>';
     typedIndex++;
     setTimeout(typeWriter, 100);
   }
@@ -185,7 +185,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // ============================================
 // FORMULÁRIO DE CONTATO - Envia via mailto:
 // ============================================
-const ALBERTO_EMAIL = 'a.senna@albertosenna.com'; // ← Altere para o email desejado
+const EVERALDO_EMAIL = 'everaldosilva31@outlook.com'; // ← Altere para o email desejado
 
 function initContactForm() {
   const form = document.getElementById('contactForm');
@@ -212,10 +212,10 @@ Mensagem:
 ${message}
 
 ---
-Enviado através do portfólio de Alberto Senna`;
+Enviado através do portfólio de Everaldo Silva dos Santos`;
 
     // Criar link mailto:
-    const mailtoLink = `mailto:${ALBERTO_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    const mailtoLink = `mailto:${EVERALDO_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
     // Abrir cliente de email
     window.location.href = mailtoLink;
@@ -224,7 +224,7 @@ Enviado através do portfólio de Alberto Senna`;
     formMessage.className = 'form-message success';
     formMessage.innerHTML = `
       <strong>✓ Abrindo seu aplicativo de email!</strong><br>
-      Se não abrir automaticamente, envie diretamente para: <strong>${ALBERTO_EMAIL}</strong>
+      Se não abrir automaticamente, envie diretamente para: <strong>${EVERALDO_EMAIL}</strong>
     `;
 
     // Limpar formulário após 2 segundos
