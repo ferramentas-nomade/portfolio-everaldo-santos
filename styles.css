@@ -17,9 +17,9 @@
   --bg-darker: #0a0a0a;
   --bg-card: #1a1a1a;
   --bg-card-hover: #222222;
-  --color-accent: #0066FF;
+  --color-accent: #136df5;
   --color-accent-light: #3385ff;
-  --color-accent-glow: rgba(0, 102, 255, 0.3);
+  --color-accent-glow: rgba(56, 64, 76, 0.3);
   --text-primary: #ffffff;
   --text-secondary: #a0a0a0;
   --text-muted: #666666;
@@ -88,7 +88,7 @@ body {
 }
 
 .splash-name {
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: 800;
   color: var(--text-primary);
   letter-spacing: 0.05em;
@@ -398,7 +398,7 @@ body {
 }
 
 .hero-name {
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: 800;
   color: var(--text-primary);
   letter-spacing: -0.02em;
@@ -1275,7 +1275,7 @@ body {
    ============================================ */
 @media (max-width: 768px) {
   .splash-name {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     min-height: 3rem;
   }
 
@@ -1297,7 +1297,7 @@ body {
   }
 
   .hero-name {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
   }
 
   .hero-title {
@@ -1406,7 +1406,7 @@ body {
 
 @media (max-width: 480px) {
   .hero-name {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .hero-title {
